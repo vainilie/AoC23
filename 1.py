@@ -93,7 +93,7 @@ def count_appear(line, num):
         while times > 0:
             pos = line.find(num, initial_pos)
             if len(num) > 1:
-                data.update({pos:word_digit_pairs[num]})
+                data.update({pos: word_digit_pairs[num]})
             else:
                 data.update({pos: num})
             initial_pos = pos + 1
@@ -102,8 +102,9 @@ def count_appear(line, num):
     else:
         pass
 
+
 # for line in lines:
-all_digits_sort=[]
+all_digits_sort = []
 for line in lines:
     digits = {}
     number = 1
